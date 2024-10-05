@@ -1,3 +1,36 @@
+:root{
+    --font: 'Work Sans', 'Open Sans', 'Roboto', 'Roboto Mono', 'Reddit Sans Condensed', 
+    'Poppins';
+}
+
 .btn-secondary{
-    margin: 2em;
+    font-family: 'Work Sans', var(--font);
+}
+
+.myLibrary{
+    font-family: 'Kanit', var(--font);
+}
+
+.first-area{
+    position: relative;
+    top: 1em;
+    left: 0.9em;
+}
+
+.toRead{
+    border: 2px solid black;
+    height: 50vh;
+    width: 80vw;
+}
+
+.second-area{
+    position: relative;
+    top: 1em;
+    left: 0.9em;
+}
+
+.finishedRead{
+    border: 2px solid black;
+    height: 50vh;
+    width: 80vw;
 }
