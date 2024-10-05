@@ -53,5 +53,20 @@ html, body {
 }
 
 .card-columns {
-    column-count: 2; /* Adjust the number of columns */
+    column-count: 2; 
+}
+
+.footer-content{
+    height: 20vh;
+    width: 100vw;
+    background-color: #2b2b2b;
+    position: relative;
+    top: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content span{
+    color: whitesmoke;
 }
