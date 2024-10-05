@@ -3,6 +3,10 @@
     'Poppins';
 }
 
+.html{
+    overflow-x: hidden;
+}
+
 .btn-secondary{
     font-family: 'Work Sans', var(--font);
 }
@@ -21,11 +25,17 @@
     border: 2px solid black;
     height: 50vh;
     width: 80vw;
+    border-radius: 10px;
+    font-family: 'Oswald', var(--font);
+}
+
+.toRead-text{
+    font-family: 'Oswald', var(--font);
 }
 
 .second-area{
     position: relative;
-    top: 1em;
+    top: 5em;
     left: 0.9em;
 }
 
@@ -33,4 +43,10 @@
     border: 2px solid black;
     height: 50vh;
     width: 80vw;
+    border-radius: 10px;
+    
+}
+
+.finishedRead-text{
+    font-family: 'Oswald', var(--font);
 }
