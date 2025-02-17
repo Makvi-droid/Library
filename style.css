@@ -1,84 +1,144 @@
-:root{
-    --font: 'Work Sans', 'Open Sans', 'Roboto', 'Roboto Mono', 'Reddit Sans Condensed', 
-    'Poppins';
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient Background */
+    color: #333;
+    background-size: cover; /* Full cover */
+    background-attachment: fixed; /* Fixed background on scroll */
 }
 
-
-
-html, body {
-    overflow-x: hidden; 
-    height: 100%; 
+/* Section Styling */
+.container-fluid {
+    padding: 50px 15px;
+    text-align: center;
 }
 
-.container-fluid{
-    background-color: #2b2b2b;
-    color: whitesmoke;
-    padding: 2em;
+.myLibrary {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Shadow effect for title */
 }
 
-
-
-
-.btn-secondary{
-    font-family: 'Work Sans', var(--font);
+.toRead-text, .finishedRead-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow effect for section titles */
 }
 
-.myLibrary{
-    font-family: 'Kanit', var(--font);
-}
-
-.first-area{
-    position: relative;
-    top: 1em;
-    left: 0.9em;
-}
-
-.toRead{
-    border: 2px solid black;
-    height: 50vh;
-    width: 80vw;
+/* Modal Styling */
+.modal-content {
     border-radius: 10px;
-    font-family: 'Oswald', var(--font);
-    background-color: #b8b8b8;
+    background-color: #f1f1f1;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.toRead-text{
-    font-family: 'Oswald', var(--font);
+.modal-header {
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
 }
 
-.second-area{
-    position: relative;
-    top: 5em;
-    left: 0.9em;
+.modal-body {
+    padding: 30px;
+    font-size: 16px;
 }
 
-.finishedRead{
-    border: 2px solid black;
-    height: 50vh;
-    width: 80vw;
+button.btn-close {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+button.btn-close:hover {
+    color: #f8f9fa;
+}
+
+/* Card Styling */
+.card {
     border-radius: 10px;
-    background-color: #b8b8b8;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
 }
 
-.finishedRead-text{
-    font-family: 'Oswald', var(--font);
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.card-columns {
-    column-count: 2; 
+.card-body {
+    padding: 20px;
+    background-color: #fff;
 }
 
-.footer-content{
-    height: 20vh;
-    width: 100vw;
-    background-color: #2b2b2b;
-    position: relative;
-    top: 20em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
 }
 
-.footer-content span{
-    color: whitesmoke;
+.card-subtitle {
+    color: #777;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button Styles for Cards */
+.markFinished {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.markFinished:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .toRead, .finishedRead {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
 }

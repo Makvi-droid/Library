@@ -17,62 +17,62 @@
 
 <body>
 
-<div class="container-fluid">
-    <h1 class="myLibrary">My Library</h1>
-    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addBookModal">Add Book</button>
-</div>
-
-<div class="first-area">
-    <h3 class="toRead-text">To Read</h3>
-    <div class="row toRead"></div> 
-</div>
-
-<div class="second-area">
-    <h3 class="finishedRead-text">Finished Books</h3>
-    <div class="row finishedRead"></div> 
-</div>
-
-<div class="modal fade" id="addBookModal" tabindex="-1" aria-labelledby="addBookModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="addBookModalLabel">Add a New Book</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="bookForm">
-                    <div class="mb-3">
-                        <label for="bookTitle" class="form-label">Book Title</label>
-                        <input type="text" class="form-control" id="bookTitle" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="bookAuthor" class="form-label">Author</label>
-                        <input type="text" class="form-control" id="bookAuthor" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="bookGenre" class="form-label">Genre</label>
-                        <input type="text" class="form-control" id="bookGenre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="bookStatus" class="form-label">Status</label>
-                        <select class="form-select" id="bookStatus" required>
-                            <option value="">Choose...</option>
-                            <option value="toRead">To Read</option>
-                            <option value="finished">Finished</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Add Book</button>
-                </form>
+    <div class="container-fluid">
+        <h1 class="myLibrary">My Library</h1>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addBookModal">Add Book</button>
+    </div>
+    
+    <div class="first-area">
+        <h3 class="toRead-text">To Read</h3>
+        <div class="row toRead"></div> 
+    </div>
+    
+    <div class="second-area">
+        <h3 class="finishedRead-text">Finished Books</h3>
+        <div class="row finishedRead"></div> 
+    </div>
+    
+    <div class="modal fade" id="addBookModal" tabindex="-1" aria-labelledby="addBookModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addBookModalLabel">Add a New Book</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookForm">
+                        <div class="mb-3">
+                            <label for="bookTitle" class="form-label">Book Title</label>
+                            <input type="text" class="form-control" id="bookTitle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookAuthor" class="form-label">Author</label>
+                            <input type="text" class="form-control" id="bookAuthor" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookGenre" class="form-label">Genre</label>
+                            <input type="text" class="form-control" id="bookGenre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookStatus" class="form-label">Status</label>
+                            <select class="form-select" id="bookStatus" required>
+                                <option value="">Choose...</option>
+                                <option value="toRead">To Read</option>
+                                <option value="finished">Finished</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Book</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<footer class="footer">
-    <div class="footer-content">
-        <span class="span">Copyright<i class="fa-regular fa-copyright"></i></span>
-    </div>
-</footer>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="span">Copyright<i class="fa-regular fa-copyright"></i></span>
+        </div>
+    </footer>
 
 <script src="https://kit.fontawesome.com/77d4dcdf26.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
